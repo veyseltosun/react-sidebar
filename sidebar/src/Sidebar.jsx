@@ -13,6 +13,28 @@ function Sidebar() {
             </button> 
         </div>
 
+        <ul className='links'>
+            {links.map((item)=>{
+                const{id, url, text, icon} = item;
+                return(
+                    <li key={id} >
+                        
+                        <a href={url} >{icon} {text}</a>
+                    </li>
+                )
+            })}
+        </ul>
+        <ul className='social-icons'>
+            {social.map((item)=>{
+                const{id, url, icon} = item;
+                return(
+                    <li key={id}>
+                        <a href={url}>{icon}</a>
+                    </li>
+                )
+            })}
+        </ul>
+
     </aside>
   )
 }
