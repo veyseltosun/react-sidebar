@@ -9,7 +9,9 @@ function Modal() {
   return (
     <div className={`${isModalOpen ? "modal-overlay show-modal": "modal-overlay"}`}>
         <div className='modal-container'>
-            <h3>modal content</h3>
+            <h3>modal content 
+                Veysel's Project
+            </h3>
             <button className='close-modal-btn' onClick={closeModal} >
                 <FaTimes/>
             </button>
