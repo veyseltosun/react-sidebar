@@ -22,7 +22,7 @@ const AppProvider = ({children}) =>{
 
 
 
-    return <AppContext.Provider value={{isModalOpen, isSidebarOpen, openModal, openSidebar}}>{children}</AppContext.Provider>
+    return <AppContext.Provider value={{isModalOpen, isSidebarOpen, openModal, openSidebar, closeModal, closeSidebar}}>{children}</AppContext.Provider>
 }
 
 export const useGlobalContext = ()=> {
